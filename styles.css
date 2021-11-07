@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    border: solid green;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid blue;
+}
+
+.button{
+    height: 50px;
+    width: 50px;
+    border: 5px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: black;
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.icon{
+    z-index: 2;
+
+}
+
+.fill{
+    height: 180%;
+    width: 180%;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    transition: all 0.2s 0s ease-in;
+}
+
+.button:hover .fill{
+    transform: translate(60px, -60px);
+}
+
+.button:hover .icon{
+    color: white;
+}
