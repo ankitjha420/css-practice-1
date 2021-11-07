@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+}
+
+html, 
+body {
+    height: 100%;
+    perspective: 900px;
+}
+
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:nth-child(1){
+    background-color: green;
+}
+.card:nth-child(2){
+    background-color: blueviolet;
+}
+.card:nth-child(3){
+    background-color: plum;
+}
+
+.card{
+    box-shadow: 9px 13px 19px 0px rgba(114,110,110,0.75);
+    -webkit-box-shadow: 9px 13px 19px 0px rgba(114,110,110,0.75);
+    -moz-box-shadow: 9px 13px 19px 0px rgba(114,110,110,0.75);
+    height: 400px;
+    width: 250px;
+    margin: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transform: rotateX(60deg) scale(0.8);
+    transition: all 0.5s 0.05s ease-out;
+}
+
+.card:hover {
+    transform: scale(1.2) rotateX(0deg) translateY(40px);
+}
+
+.card:nth-child(1):hover{
+    transform: rotateY(20deg);
+}
+
+.card:nth-child(3):hover{
+    transform: rotateY(-20deg);
+}
